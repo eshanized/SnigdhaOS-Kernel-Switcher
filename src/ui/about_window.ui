@@ -56,7 +56,7 @@
    <item>
     <widget class="QLabel" name="label_author">
      <property name="text">
-      <string>Developed by: Your Name</string>
+      <string>Developed by: Eshan Roy</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
