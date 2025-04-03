@@ -1,9 +1,222 @@
+/* ========== Main Window ========== */
 QMainWindow {
     background-color: #2E3440;
+    color: #D8DEE9;
 }
+
+/* ========== QLabel Styles ========== */
+QLabel {
+    color: #D8DEE9;
+    font-size: 12pt;
+}
+
+/* Title Labels (Bold) */
+QLabel#label_title {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #88C0D0;
+}
+
+/* ========== QPushButton Styles ========== */
 QPushButton {
     background-color: #88C0D0;
     color: white;
+    font-size: 11pt;
     font-weight: bold;
     border-radius: 5px;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: #81A1C1;
+}
+
+QPushButton:pressed {
+    background-color: #5E81AC;
+}
+
+/* Close button (Red variant) */
+QPushButton#button_close {
+    background-color: #BF616A;
+}
+
+QPushButton#button_close:hover {
+    background-color: #D08770;
+}
+
+QPushButton#button_close:pressed {
+    background-color: #A54251;
+}
+
+/* ========== QLineEdit (Text Fields) ========== */
+QLineEdit {
+    background-color: #3B4252;
+    color: #D8DEE9;
+    border: 1px solid #4C566A;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #88C0D0;
+}
+
+/* ========== QTextEdit (Multiline Text Input) ========== */
+QTextEdit {
+    background-color: #3B4252;
+    color: #D8DEE9;
+    border: 1px solid #4C566A;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+QTextEdit:focus {
+    border: 1px solid #88C0D0;
+}
+
+/* ========== QComboBox (Dropdowns) ========== */
+QComboBox {
+    background-color: #3B4252;
+    color: #D8DEE9;
+    border: 1px solid #4C566A;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #3B4252;
+    selection-background-color: #88C0D0;
+    selection-color: white;
+}
+
+/* ========== QCheckBox ========== */
+QCheckBox {
+    color: #D8DEE9;
+    font-size: 11pt;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(icons/checkbox_unchecked.png);
+}
+
+QCheckBox::indicator:checked {
+    image: url(icons/checkbox_checked.png);
+}
+
+/* ========== QRadioButton ========== */
+QRadioButton {
+    color: #D8DEE9;
+    font-size: 11pt;
+}
+
+QRadioButton::indicator {
+    width: 16px;
+    height: 16px;
+}
+
+QRadioButton::indicator::unchecked {
+    image: url(icons/radio_unchecked.png);
+}
+
+QRadioButton::indicator::checked {
+    image: url(icons/radio_checked.png);
+}
+
+/* ========== QListWidget / QTreeWidget ========== */
+QListWidget, QTreeWidget {
+    background-color: #3B4252;
+    color: #D8DEE9;
+    border: 1px solid #4C566A;
+}
+
+QListWidget::item:selected, QTreeWidget::item:selected {
+    background-color: #88C0D0;
+    color: white;
+}
+
+/* ========== QTableWidget ========== */
+QTableWidget {
+    background-color: #3B4252;
+    color: #D8DEE9;
+    border: 1px solid #4C566A;
+    gridline-color: #4C566A;
+}
+
+QTableWidget::item:selected {
+    background-color: #88C0D0;
+    color: white;
+}
+
+/* ========== QProgressBar ========== */
+QProgressBar {
+    border: 1px solid #4C566A;
+    background-color: #3B4252;
+    border-radius: 5px;
+    text-align: center;
+    color: #D8DEE9;
+}
+
+QProgressBar::chunk {
+    background-color: #88C0D0;
+    width: 10px;
+}
+
+/* ========== QScrollBar ========== */
+QScrollBar:vertical, QScrollBar:horizontal {
+    background-color: #3B4252;
+    border: none;
+    width: 10px;
+}
+
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background-color: #88C0D0;
+    border-radius: 5px;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+    background: none;
+}
+
+/* ========== QMenuBar ========== */
+QMenuBar {
+    background-color: #2E3440;
+    color: #D8DEE9;
+}
+
+QMenuBar::item:selected {
+    background-color: #4C566A;
+}
+
+/* ========== QMenu ========== */
+QMenu {
+    background-color: #2E3440;
+    color: #D8DEE9;
+    border: 1px solid #4C566A;
+}
+
+QMenu::item:selected {
+    background-color: #88C0D0;
+    color: white;
+}
+
+/* ========== QMessageBox ========== */
+QMessageBox {
+    background-color: #3B4252;
+    color: #D8DEE9;
+}
+
+/* Dialog Window */
+QDialog {
+    background-color: #2E3440;
+    color: #D8DEE9;
+}
+
+/* ========== Custom Window Borders (Optional) ========== */
+QWidget {
+    border: 1px solid #4C566A;
 }
